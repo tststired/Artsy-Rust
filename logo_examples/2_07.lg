@@ -1,0 +1,3 @@
+MAKE "X "3
+MAKE "Y "X
+FORWARD :Y

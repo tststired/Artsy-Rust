@@ -1,0 +1,622 @@
+Found cargo project: [32mrslogo[0m
+Located autotests for [32mrslogo[0m
+./build_mark_wrapper.sh crate.tar
+   Compiling mark_wrapper v0.1.0 (/tmp/tmpfa5bcqjv/mark_wrapper)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.38s
+6991 cargo build --target-dir target # crate.tar
+   Compiling bytemuck v1.14.0
+   Compiling float-cmp v0.9.0
+   Compiling crc32fast v1.3.2
+   Compiling arrayvec v0.7.4
+   Compiling simd-adler32 v0.3.7
+   Compiling strict-num v0.1.1
+   Compiling cfg-if v1.0.0
+   Compiling xmlparser v0.13.6
+   Compiling arrayref v0.3.7
+   Compiling log v0.4.20
+   Compiling adler v1.0.2
+   Compiling libc v0.2.149
+   Compiling version_check v0.9.4
+   Compiling miniz_oxide v0.7.1
+   Compiling slotmap v1.0.6
+   Compiling roxmltree v0.18.1
+   Compiling tiny-skia-path v0.10.0
+   Compiling kurbo v0.9.5
+   Compiling unicode-general-category v0.6.0
+   Compiling bitflags v1.3.2
+   Compiling siphasher v0.3.11
+   Compiling svgtypes v0.11.0
+   Compiling flate2 v1.0.28
+   Compiling proc-macro2 v1.0.69
+   Compiling tinyvec_macros v0.1.1
+   Compiling rctree v0.5.0
+   Compiling memmap2 v0.6.2
+   Compiling usvg-tree v0.35.0
+   Compiling tinyvec v1.6.0
+   Compiling fontconfig-parser v0.5.3
+   Compiling unicode-script v0.5.5
+   Compiling unicode-ident v1.0.12
+   Compiling unicode-ccc v0.1.2
+   Compiling smallvec v1.11.1
+   Compiling ttf-parser v0.19.2
+   Compiling unicode-bidi-mirroring v0.1.0
+   Compiling ttf-parser v0.18.1
+   Compiling rustybuzz v0.7.0
+   Compiling fontdb v0.14.1
+   Compiling simplecss v0.2.1
+   Compiling fdeflate v0.3.0
+   Compiling unicode-vo v0.1.0
+   Compiling data-url v0.2.0
+   Compiling imagesize v0.12.0
+   Compiling unicode-bidi v0.3.13
+   Compiling utf8parse v0.2.1
+   Compiling anstyle-parse v0.2.2
+   Compiling usvg-parser v0.35.0
+   Compiling usvg-text-layout v0.35.0
+   Compiling png v0.17.10
+   Compiling quote v1.0.33
+   Compiling color_quant v1.1.0
+   Compiling colorchoice v1.0.0
+   Compiling weezl v0.1.7
+   Compiling anstyle v1.0.4
+   Compiling anstyle-query v1.0.0
+   Compiling base64 v0.21.4
+   Compiling pico-args v0.5.0
+   Compiling xmlwriter v0.1.0
+   Compiling usvg v0.35.0
+   Compiling anstream v0.6.4
+   Compiling gif v0.12.0
+   Compiling syn v2.0.38
+   Compiling tiny-skia v0.10.0
+   Compiling rgb v0.8.36
+   Compiling heck v0.4.1
+   Compiling strsim v0.10.0
+   Compiling jpeg-decoder v0.3.0
+   Compiling clap_lex v0.5.1
+   Compiling clap_builder v4.4.6
+   Compiling resvg v0.35.0
+   Compiling clap_derive v4.4.2
+   Compiling clap v4.4.6
+   Compiling unsvg v1.1.2
+   Compiling rslogo v0.1.0 (/tmp/tmpfa5bcqjv)
+    Finished dev [unoptimized + debuginfo] target(s) in 22.85s
+Test 0 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/0_00_empty_file.lg output.svg 200 200) - passed
+Test 1 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/0_01_comments_only.lg output.svg 200 200) - passed
+Test 2 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_00_penup_pendown.lg output.svg 200 200) - passed
+Test 3 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_01_setpencolor.lg output.svg 200 200) - passed
+Test 4 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_02_forward_back.lg output.svg 200 200) - passed
+Test 5 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_03_left_right.lg output.svg 200 200) - passed
+Test 6 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_04_turn_rel.lg output.svg 200 200) - passed
+Test 7 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_05_setheading_abs.lg output.svg 200 200) - passed
+Test 8 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_06_setx_sety.lg output.svg 200 200) - passed
+Test 9 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_07_combo.lg output.svg 200 200) - passed
+Test 10 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/1_08_harder_combo.lg output.svg 200 200) - passed
+Test 11 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/1_09_too_many_args_err.lg output.svg 200 200) - passed
+Test 12 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/1_10_too_many_args_2_err.lg output.svg 200 200) - passed
+Test 13 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/1_11_wrong_type_err.lg output.svg 200 200) - passed
+Test 14 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/1_12_not_enough_args_err.lg output.svg 200 200) - passed
+Test 15 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/1_13_wrong_type_err.lg output.svg 200 200) - passed
+Test 16 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/2_00_penup_pendown_vars.lg output.svg 200 200) - passed
+Test 17 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/2_01_setpencolor_vars.lg output.svg 200 200) - passed
+Test 18 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/2_02_moving_vars.lg output.svg 200 200) - passed
+Test 19 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/2_03_missing_var_err.lg output.svg 200 200) - passed
+Test 20 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/2_04_queries.lg output.svg 200 200) - passed
+Test 21 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/2_05_addassign.lg output.svg 200 200) - passed
+Test 22 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/2_06_unknownaddassign_err.lg output.svg 200 200) - passed
+Test 23 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/3_00_simple_if.lg output.svg 200 200) - passed
+Test 24 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/3_01_double_if.lg output.svg 200 200) - passed
+Test 25 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/3_02_nested_if.lg output.svg 200 200) - passed
+Test 26 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/3_03_single_loop.lg output.svg 200 200) - passed
+Test 27 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/3_04_zero_loop.lg output.svg 200 200) - passed
+Test 28 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/3_05_spiral.lg output.svg 200 200) - passed
+Test 29 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/3_06_spiral2.lg output.svg 200 200) - passed
+Test 30 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/3_07_invalid_if_err.lg output.svg 200 200) - passed
+Test 31 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/3_08_invalid_while_err.lg output.svg 200 200) - passed
+Test 32 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_00_basic_arithmetic.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 92"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 92"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_00_basic_arithmetic.lg output.svg 200 200
+Test 33 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_01_basic_arithmetic_neg.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 98.50001"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 98.50001"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_01_basic_arithmetic_neg.lg output.svg 200 200
+Test 34 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_02_logical_and.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 90"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 90"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_02_logical_and.lg output.svg 200 200
+Test 35 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_03_logical_or.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 110"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 110"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_03_logical_or.lg output.svg 200 200
+Test 36 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_04_nested_if.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 95"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 95"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_04_nested_if.lg output.svg 200 200
+Test 37 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_05_mixed_logic.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 80"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 80"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_05_mixed_logic.lg output.svg 200 200
+Test 38 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_06_mixed_logic_2.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 5 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_06_mixed_logic_2.lg output.svg 200 200
+Test 39 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_07_complex_1.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 99"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 99"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_07_complex_1.lg output.svg 200 200
+Test 40 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_08_ne_check.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 6 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 75"/>
+</svg>
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 75"/>
++ </svg>
++ 
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_08_ne_check.lg output.svg 200 200
+Test 41 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_09_spiral.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 209 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#0000ff" d="M 100 100 L 100.86719 100.5"/>
+    <path fill="none" stroke="#0000ff" d="M 100.86719 100.5 L 101.36718 99.63281"/>
+    <path fill="none" stroke="#00ffff" d="M 101.36718 99.63281 L 98.76953 101.13281"/>
+    <path fill="none" stroke="#00ffff" d="M 98.76953 101.13281 L 99.26953 102"/>
+    <path fill="none" stroke="#00ff00" d="M 99.26953 102 L 99.26953 97"/>
+    <path fill="none" stroke="#00ff00" d="M 99.26953 97 L 98.26953 97"/>
+    <path fill="none" stroke="#ff0000" d="M 98.26953 97 L 104.33203 100.5"/>
+    <path fill="none" stroke="#ff0000" d="M 104.33203 100.5 L 104.83203 99.63281"/>
+    <path fill="none" stroke="#ff00ff" d="M 104.83203 99.63281 L 97.03906 104.13281"/>
+    <path fill="none" stroke="#ff00ff" d="M 97.03906 104.13281 L 97.53906 105"/>
+    <path fill="none" stroke="#ffff00" d="M 97.53906 105 L 97.53906 94"/>
+    <path fill="none" stroke="#ffff00" d="M 97.53906 94 L 96.53906 94"/>
+    <path fill="none" stroke="#ffffff" d="M 96.53906 94 L 107.79688 100.5"/>
+    <path fill="none" stroke="#ffffff" d="M 107.79688 100.5 L 108.296875 99.63281"/>
+    <path fill="none" stroke="#a52a2a" d="M 108.296875 99.63281 L 95.30468 107.13281"/>
+    <path fill="none" stroke="#a52a2a" d="M 95.30468 107.13281 L 95.804695 108"/>
+    <path fill="none" stroke="#d2b48c" d="M 95.804695 108 L 95.804695 91"/>
+    <path fill="none" stroke="#d2b48c" d="M 95.804695 91 L 94.80469 91"/>
+    <path fill="none" stroke="#228b22" d="M 94.80469 91 L 111.25781 100.5"/>
+    <path fill="none" stroke="#228b22" d="M 111.25781 100.5 L 111.75781 99.63281"/>
+    <path fill="none" stroke="#7fffd4" d="M 111.75781 99.63281 L 93.57031 110.132805"/>
+    <path fill="none" stroke="#7fffd4" d="M 93.57031 110.132805 L 94.07031 111"/>
+    <path fill="none" stroke="#fa8072" d="M 94.07031 111 L 94.07031 88"/>
+    <path fill="none" stroke="#fa8072" d="M 94.07031 88 L 93.07031 88"/>
+    <path fill="none" stroke="#800080" d="M 93.07031 88 L 114.72265 100.5"/>
+    <path fill="none" stroke="#800080" d="M 114.72265 100.5 L 115.222664 99.63281"/>
+    <path fill="none" stroke="#ffa500" d="M 115.222664 99.63281 L 91.83984 113.13281"/>
+    <path fill="none" stroke="#ffa500" d="M 91.83984 113.13281 L 92.33984 114"/>
+    <path fill="none" stroke="#808080" d="M 92.33984 114 L 92.33984 85"/>
+...
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#0000ff" d="M 100 100 L 100.86719 100.5"/>
++     <path fill="none" stroke="#0000ff" d="M 100.86719 100.5 L 101.36718 99.63281"/>
++     <path fill="none" stroke="#00ffff" d="M 101.36718 99.63281 L 98.76953 101.13281"/>
++     <path fill="none" stroke="#00ffff" d="M 98.76953 101.13281 L 99.26953 102"/>
++     <path fill="none" stroke="#00ff00" d="M 99.26953 102 L 99.26953 97"/>
++     <path fill="none" stroke="#00ff00" d="M 99.26953 97 L 98.26953 97"/>
++     <path fill="none" stroke="#ff0000" d="M 98.26953 97 L 104.33203 100.5"/>
++     <path fill="none" stroke="#ff0000" d="M 104.33203 100.5 L 104.83203 99.63281"/>
++     <path fill="none" stroke="#ff00ff" d="M 104.83203 99.63281 L 97.03906 104.13281"/>
++     <path fill="none" stroke="#ff00ff" d="M 97.03906 104.13281 L 97.53906 105"/>
++     <path fill="none" stroke="#ffff00" d="M 97.53906 105 L 97.53906 94"/>
++     <path fill="none" stroke="#ffff00" d="M 97.53906 94 L 96.53906 94"/>
++     <path fill="none" stroke="#ffffff" d="M 96.53906 94 L 107.79688 100.5"/>
++     <path fill="none" stroke="#ffffff" d="M 107.79688 100.5 L 108.296875 99.63281"/>
++     <path fill="none" stroke="#a52a2a" d="M 108.296875 99.63281 L 95.30468 107.13281"/>
++     <path fill="none" stroke="#a52a2a" d="M 95.30468 107.13281 L 95.804695 108"/>
++     <path fill="none" stroke="#d2b48c" d="M 95.804695 108 L 95.804695 91"/>
++     <path fill="none" stroke="#d2b48c" d="M 95.804695 91 L 94.80469 91"/>
++     <path fill="none" stroke="#228b22" d="M 94.80469 91 L 111.25781 100.5"/>
++     <path fill="none" stroke="#228b22" d="M 111.25781 100.5 L 111.75781 99.63281"/>
++     <path fill="none" stroke="#7fffd4" d="M 111.75781 99.63281 L 93.57031 110.132805"/>
++     <path fill="none" stroke="#7fffd4" d="M 93.57031 110.132805 L 94.07031 111"/>
++     <path fill="none" stroke="#fa8072" d="M 94.07031 111 L 94.07031 88"/>
++     <path fill="none" stroke="#fa8072" d="M 94.07031 88 L 93.07031 88"/>
++     <path fill="none" stroke="#800080" d="M 93.07031 88 L 114.72265 100.5"/>
++     <path fill="none" stroke="#800080" d="M 114.72265 100.5 L 115.222664 99.63281"/>
++     <path fill="none" stroke="#ffa500" d="M 115.222664 99.63281 L 91.83984 113.13281"/>
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/4_09_spiral.lg output.svg 200 200
+Test 42 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/5_00_boxes.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 121 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#d2b48c" d="M 100 100 L 103.42187 90.60156"/>
+    <path fill="none" stroke="#d2b48c" d="M 103.42187 90.60156 L 94.02344 87.17969"/>
+    <path fill="none" stroke="#d2b48c" d="M 94.02344 87.17969 L 90.60156 96.57813"/>
+    <path fill="none" stroke="#d2b48c" d="M 90.60156 96.57813 L 100 100"/>
+    <path fill="none" stroke="#ff0000" d="M 100 100 L 106.42969 92.33984"/>
+    <path fill="none" stroke="#ff0000" d="M 106.42969 92.33984 L 98.76953 85.91016"/>
+    <path fill="none" stroke="#ff0000" d="M 98.76953 85.91016 L 92.33984 93.57031"/>
+    <path fill="none" stroke="#ff0000" d="M 92.33984 93.57031 L 100 100"/>
+    <path fill="none" stroke="#ffff00" d="M 100 100 L 108.66015 95"/>
+    <path fill="none" stroke="#ffff00" d="M 108.66015 95 L 103.66016 86.33984"/>
+    <path fill="none" stroke="#ffff00" d="M 103.66016 86.33984 L 95 91.33985"/>
+    <path fill="none" stroke="#ffff00" d="M 95 91.33985 L 100 100"/>
+    <path fill="none" stroke="#a52a2a" d="M 100 100 L 109.84766 98.26172"/>
+    <path fill="none" stroke="#a52a2a" d="M 109.84766 98.26172 L 108.109375 88.41406"/>
+    <path fill="none" stroke="#a52a2a" d="M 108.109375 88.41406 L 98.26172 90.15234"/>
+    <path fill="none" stroke="#a52a2a" d="M 98.26172 90.15234 L 100 100"/>
+    <path fill="none" stroke="#228b22" d="M 100 100 L 109.84766 101.73828"/>
+    <path fill="none" stroke="#228b22" d="M 109.84766 101.73828 L 111.58594 91.890625"/>
+    <path fill="none" stroke="#228b22" d="M 111.58594 91.890625 L 101.73828 90.15234"/>
+    <path fill="none" stroke="#228b22" d="M 101.73828 90.15234 L 100 100"/>
+    <path fill="none" stroke="#ff0000" d="M 100 100 L 108.66015 105"/>
+    <path fill="none" stroke="#ff0000" d="M 108.66015 105 L 113.66016 96.33984"/>
+    <path fill="none" stroke="#ff0000" d="M 113.66016 96.33984 L 105 91.33985"/>
+    <path fill="none" stroke="#ff0000" d="M 105 91.33985 L 100 100"/>
+    <path fill="none" stroke="#ffff00" d="M 100 100 L 106.42969 107.66016"/>
+    <path fill="none" stroke="#ffff00" d="M 106.42969 107.66016 L 114.08984 101.23047"/>
+    <path fill="none" stroke="#ffff00" d="M 114.08984 101.23047 L 107.66016 93.57031"/>
+    <path fill="none" stroke="#ffff00" d="M 107.66016 93.57031 L 100 100"/>
+    <path fill="none" stroke="#a52a2a" d="M 100 100 L 103.42187 109.39844"/>
+...
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#d2b48c" d="M 100 100 L 103.42187 90.60156"/>
++     <path fill="none" stroke="#d2b48c" d="M 103.42187 90.60156 L 94.02344 87.17969"/>
++     <path fill="none" stroke="#d2b48c" d="M 94.02344 87.17969 L 90.60156 96.57813"/>
++     <path fill="none" stroke="#d2b48c" d="M 90.60156 96.57813 L 100 100"/>
++     <path fill="none" stroke="#ff0000" d="M 100 100 L 106.42969 92.33984"/>
++     <path fill="none" stroke="#ff0000" d="M 106.42969 92.33984 L 98.76953 85.91016"/>
++     <path fill="none" stroke="#ff0000" d="M 98.76953 85.91016 L 92.33984 93.57031"/>
++     <path fill="none" stroke="#ff0000" d="M 92.33984 93.57031 L 100 100"/>
++     <path fill="none" stroke="#ffff00" d="M 100 100 L 108.66015 95"/>
++     <path fill="none" stroke="#ffff00" d="M 108.66015 95 L 103.66016 86.33984"/>
++     <path fill="none" stroke="#ffff00" d="M 103.66016 86.33984 L 95 91.33985"/>
++     <path fill="none" stroke="#ffff00" d="M 95 91.33985 L 100 100"/>
++     <path fill="none" stroke="#a52a2a" d="M 100 100 L 109.84766 98.26172"/>
++     <path fill="none" stroke="#a52a2a" d="M 109.84766 98.26172 L 108.109375 88.41406"/>
++     <path fill="none" stroke="#a52a2a" d="M 108.109375 88.41406 L 98.26172 90.15234"/>
++     <path fill="none" stroke="#a52a2a" d="M 98.26172 90.15234 L 100 100"/>
++     <path fill="none" stroke="#228b22" d="M 100 100 L 109.84766 101.73828"/>
++     <path fill="none" stroke="#228b22" d="M 109.84766 101.73828 L 111.58594 91.890625"/>
++     <path fill="none" stroke="#228b22" d="M 111.58594 91.890625 L 101.73828 90.15234"/>
++     <path fill="none" stroke="#228b22" d="M 101.73828 90.15234 L 100 100"/>
++     <path fill="none" stroke="#ff0000" d="M 100 100 L 108.66015 105"/>
++     <path fill="none" stroke="#ff0000" d="M 108.66015 105 L 113.66016 96.33984"/>
++     <path fill="none" stroke="#ff0000" d="M 113.66016 96.33984 L 105 91.33985"/>
++     <path fill="none" stroke="#ff0000" d="M 105 91.33985 L 100 100"/>
++     <path fill="none" stroke="#ffff00" d="M 100 100 L 106.42969 107.66016"/>
++     <path fill="none" stroke="#ffff00" d="M 106.42969 107.66016 L 114.08984 101.23047"/>
++     <path fill="none" stroke="#ffff00" d="M 114.08984 101.23047 L 107.66016 93.57031"/>
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/5_00_boxes.lg output.svg 200 200
+Test 43 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/5_01_boxes2.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 121 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#d2b48c" d="M 100 100 L 100.68359 98.12109"/>
+    <path fill="none" stroke="#d2b48c" d="M 100.68359 98.12109 L 98.80469 97.4375"/>
+    <path fill="none" stroke="#d2b48c" d="M 98.80469 97.4375 L 98.12109 99.31641"/>
+    <path fill="none" stroke="#d2b48c" d="M 98.12109 99.31641 L 100 100"/>
+    <path fill="none" stroke="#ff0000" d="M 100 100 L 102.57031 96.9375"/>
+    <path fill="none" stroke="#ff0000" d="M 102.57031 96.9375 L 99.50781 94.36719"/>
+    <path fill="none" stroke="#ff0000" d="M 99.50781 94.36719 L 96.9375 97.42969"/>
+    <path fill="none" stroke="#ff0000" d="M 96.9375 97.42969 L 100 100"/>
+    <path fill="none" stroke="#ffff00" d="M 100 100 L 105.19531 97"/>
+    <path fill="none" stroke="#ffff00" d="M 105.19531 97 L 102.19531 91.804695"/>
+    <path fill="none" stroke="#ffff00" d="M 102.19531 91.804695 L 97 94.80469"/>
+    <path fill="none" stroke="#ffff00" d="M 97 94.80469 L 100 100"/>
+    <path fill="none" stroke="#a52a2a" d="M 100 100 L 107.8789 98.609375"/>
+    <path fill="none" stroke="#a52a2a" d="M 107.8789 98.609375 L 106.48828 90.73047"/>
+    <path fill="none" stroke="#a52a2a" d="M 106.48828 90.73047 L 98.609375 92.1211"/>
+    <path fill="none" stroke="#a52a2a" d="M 98.609375 92.1211 L 100 100"/>
+    <path fill="none" stroke="#228b22" d="M 100 100 L 109.84766 101.73828"/>
+    <path fill="none" stroke="#228b22" d="M 109.84766 101.73828 L 111.58594 91.890625"/>
+    <path fill="none" stroke="#228b22" d="M 111.58594 91.890625 L 101.73828 90.15234"/>
+    <path fill="none" stroke="#228b22" d="M 101.73828 90.15234 L 100 100"/>
+    <path fill="none" stroke="#ff0000" d="M 100 100 L 110.39062 106"/>
+    <path fill="none" stroke="#ff0000" d="M 110.39062 106 L 116.390625 95.609375"/>
+    <path fill="none" stroke="#ff0000" d="M 116.390625 95.609375 L 106 89.60938"/>
+    <path fill="none" stroke="#ff0000" d="M 106 89.60938 L 100 100"/>
+    <path fill="none" stroke="#ffff00" d="M 100 100 L 109 110.72656"/>
+    <path fill="none" stroke="#ffff00" d="M 109 110.72656 L 119.72656 101.72657"/>
+    <path fill="none" stroke="#ffff00" d="M 119.72656 101.72657 L 110.72656 91"/>
+    <path fill="none" stroke="#ffff00" d="M 110.72656 91 L 100 100"/>
+    <path fill="none" stroke="#a52a2a" d="M 100 100 L 105.47266 115.03516"/>
+...
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#d2b48c" d="M 100 100 L 100.68359 98.12109"/>
++     <path fill="none" stroke="#d2b48c" d="M 100.68359 98.12109 L 98.80469 97.4375"/>
++     <path fill="none" stroke="#d2b48c" d="M 98.80469 97.4375 L 98.12109 99.31641"/>
++     <path fill="none" stroke="#d2b48c" d="M 98.12109 99.31641 L 100 100"/>
++     <path fill="none" stroke="#ff0000" d="M 100 100 L 102.57031 96.9375"/>
++     <path fill="none" stroke="#ff0000" d="M 102.57031 96.9375 L 99.50781 94.36719"/>
++     <path fill="none" stroke="#ff0000" d="M 99.50781 94.36719 L 96.9375 97.42969"/>
++     <path fill="none" stroke="#ff0000" d="M 96.9375 97.42969 L 100 100"/>
++     <path fill="none" stroke="#ffff00" d="M 100 100 L 105.19531 97"/>
++     <path fill="none" stroke="#ffff00" d="M 105.19531 97 L 102.19531 91.804695"/>
++     <path fill="none" stroke="#ffff00" d="M 102.19531 91.804695 L 97 94.80469"/>
++     <path fill="none" stroke="#ffff00" d="M 97 94.80469 L 100 100"/>
++     <path fill="none" stroke="#a52a2a" d="M 100 100 L 107.8789 98.609375"/>
++     <path fill="none" stroke="#a52a2a" d="M 107.8789 98.609375 L 106.48828 90.73047"/>
++     <path fill="none" stroke="#a52a2a" d="M 106.48828 90.73047 L 98.609375 92.1211"/>
++     <path fill="none" stroke="#a52a2a" d="M 98.609375 92.1211 L 100 100"/>
++     <path fill="none" stroke="#228b22" d="M 100 100 L 109.84766 101.73828"/>
++     <path fill="none" stroke="#228b22" d="M 109.84766 101.73828 L 111.58594 91.890625"/>
++     <path fill="none" stroke="#228b22" d="M 111.58594 91.890625 L 101.73828 90.15234"/>
++     <path fill="none" stroke="#228b22" d="M 101.73828 90.15234 L 100 100"/>
++     <path fill="none" stroke="#ff0000" d="M 100 100 L 110.39062 106"/>
++     <path fill="none" stroke="#ff0000" d="M 110.39062 106 L 116.390625 95.609375"/>
++     <path fill="none" stroke="#ff0000" d="M 116.390625 95.609375 L 106 89.60938"/>
++     <path fill="none" stroke="#ff0000" d="M 106 89.60938 L 100 100"/>
++     <path fill="none" stroke="#ffff00" d="M 100 100 L 109 110.72656"/>
++     <path fill="none" stroke="#ffff00" d="M 109 110.72656 L 119.72656 101.72657"/>
++     <path fill="none" stroke="#ffff00" d="M 119.72656 101.72657 L 110.72656 91"/>
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/5_01_boxes2.lg output.svg 200 200
+Test 44 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/5_02_invalid_err.lg output.svg 200 200) - passed
+Test 45 (mark_wrapper/target/debug/mark_wrapper EXPECT_ERROR ./target/debug/rslogo output.svg logo_examples/5_03_invalid_end_err.lg output.svg 200 200) - passed
+Test 46 (mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/5_04_star.lg output.svg 200 200) - failed (Incorrect output)
+Your program produced this line of output:
+Program did not execute correctly.
+
+The correct 505 lines of output for this test were:
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
+    <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
+    <path fill="none" stroke="#0000ff" d="M 100 100 L 101.453125 94.17969"/>
+    <path fill="none" stroke="#0000ff" d="M 101.453125 94.17969 L 103.69922 99.74219"/>
+    <path fill="none" stroke="#0000ff" d="M 103.69922 99.74219 L 98.609375 96.5625"/>
+    <path fill="none" stroke="#0000ff" d="M 98.609375 96.5625 L 104.59374 96.14452"/>
+    <path fill="none" stroke="#0000ff" d="M 104.59374 96.14452 L 99.9961 100"/>
+    <path fill="none" stroke="#0000ff" d="M 99.9961 100 L 104.296875 88.796875"/>
+    <path fill="none" stroke="#0000ff" d="M 104.296875 88.796875 L 107.40234 100.38673"/>
+    <path fill="none" stroke="#0000ff" d="M 107.40234 100.38673 L 98.078125 92.835945"/>
+    <path fill="none" stroke="#0000ff" d="M 98.078125 92.835945 L 110.0625 93.46484"/>
+    <path fill="none" stroke="#0000ff" d="M 110.0625 93.46484 L 100 100"/>
+    <path fill="none" stroke="#0000ff" d="M 100 100 L 108.44922 84.10547"/>
+    <path fill="none" stroke="#0000ff" d="M 108.44922 84.10547 L 110.953125 101.92969"/>
+    <path fill="none" stroke="#0000ff" d="M 110.953125 101.92969 L 98.44923 88.98047"/>
+    <path fill="none" stroke="#0000ff" d="M 98.44923 88.98047 L 116.17578 92.10547"/>
+    <path fill="none" stroke="#0000ff" d="M 116.17578 92.10547 L 99.9961 99.9961"/>
+    <path fill="none" stroke="#0000ff" d="M 99.9961 99.9961 L 113.76172 80.33594"/>
+    <path fill="none" stroke="#0000ff" d="M 113.76172 80.33594 L 114.17969 104.33203"/>
+    <path fill="none" stroke="#0000ff" d="M 114.17969 104.33203 L 99.734375 85.16406"/>
+    <path fill="none" stroke="#0000ff" d="M 99.734375 85.16406 L 122.6875 92.179695"/>
+    <path fill="none" stroke="#0000ff" d="M 122.6875 92.179695 L 99.9961 99.99219"/>
+    <path fill="none" stroke="#0000ff" d="M 99.9961 99.99219 L 120.070305 77.69922"/>
+    <path fill="none" stroke="#0000ff" d="M 120.070305 77.69922 L 116.93359 107.53516"/>
+    <path fill="none" stroke="#0000ff" d="M 116.93359 107.53516 L 101.9336 81.55469"/>
+    <path fill="none" stroke="#0000ff" d="M 101.9336 81.55469 L 129.33984 93.757805"/>
+...
+
+
+The difference between your output(-) and the correct output(+) is:
+- Program did not execute correctly.
++ <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
++     <defs/>
++     <path fill="#000000" stroke="none" d="M 0 0 L 200 0 L 200 200 L 0 200 Z"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
++     <path fill="none" stroke="#ffffff" d="M 100 100 L 100 100"/>
++     <path fill="none" stroke="#0000ff" d="M 100 100 L 101.453125 94.17969"/>
++     <path fill="none" stroke="#0000ff" d="M 101.453125 94.17969 L 103.69922 99.74219"/>
++     <path fill="none" stroke="#0000ff" d="M 103.69922 99.74219 L 98.609375 96.5625"/>
++     <path fill="none" stroke="#0000ff" d="M 98.609375 96.5625 L 104.59374 96.14452"/>
++     <path fill="none" stroke="#0000ff" d="M 104.59374 96.14452 L 99.9961 100"/>
++     <path fill="none" stroke="#0000ff" d="M 99.9961 100 L 104.296875 88.796875"/>
++     <path fill="none" stroke="#0000ff" d="M 104.296875 88.796875 L 107.40234 100.38673"/>
++     <path fill="none" stroke="#0000ff" d="M 107.40234 100.38673 L 98.078125 92.835945"/>
++     <path fill="none" stroke="#0000ff" d="M 98.078125 92.835945 L 110.0625 93.46484"/>
++     <path fill="none" stroke="#0000ff" d="M 110.0625 93.46484 L 100 100"/>
++     <path fill="none" stroke="#0000ff" d="M 100 100 L 108.44922 84.10547"/>
++     <path fill="none" stroke="#0000ff" d="M 108.44922 84.10547 L 110.953125 101.92969"/>
++     <path fill="none" stroke="#0000ff" d="M 110.953125 101.92969 L 98.44923 88.98047"/>
++     <path fill="none" stroke="#0000ff" d="M 98.44923 88.98047 L 116.17578 92.10547"/>
++     <path fill="none" stroke="#0000ff" d="M 116.17578 92.10547 L 99.9961 99.9961"/>
++     <path fill="none" stroke="#0000ff" d="M 99.9961 99.9961 L 113.76172 80.33594"/>
++     <path fill="none" stroke="#0000ff" d="M 113.76172 80.33594 L 114.17969 104.33203"/>
++     <path fill="none" stroke="#0000ff" d="M 114.17969 104.33203 L 99.734375 85.16406"/>
++     <path fill="none" stroke="#0000ff" d="M 99.734375 85.16406 L 122.6875 92.179695"/>
++     <path fill="none" stroke="#0000ff" d="M 122.6875 92.179695 L 99.9961 99.99219"/>
++     <path fill="none" stroke="#0000ff" d="M 99.9961 99.99219 L 120.070305 77.69922"/>
++     <path fill="none" stroke="#0000ff" d="M 120.070305 77.69922 L 116.93359 107.53516"/>
+You can reproduce this test by executing these commands:
+  ./build_mark_wrapper.sh crate.tar
+  mark_wrapper/target/debug/mark_wrapper EXPECT_OK ./target/debug/rslogo output.svg logo_examples/5_04_star.lg output.svg 200 200
+34 tests passed 13 tests failed

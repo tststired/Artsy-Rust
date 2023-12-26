@@ -1,0 +1,73 @@
+# RSLogo Mark Request
+
+## Which stages are complete?
+
+Please mark stages that are complete with an [X].
+Stages that are partially complete should be marked with a [?].
+Stages that are not complete should be left blank (like [ ]).
+
+> [X] Stage 1 (Pen Controls)
+> [X] Stage 2 (Variables + Queries)
+> [X] Stage 3 (If + While)
+> [?] Stage 4 (The Stack)
+> [ ] Stage 5 (Procedures)
+
+## Design Excellence
+
+If you have completed a "design excellence" task, please write what
+the task was below (note, it MUST be on the list in the assignment or
+approved by COMP6991 staff).
+
+> My errors are very thorough, i'd say around 25% is purely for errors,
+each error reports the line the error occured, which function it was called at. 
+The errors are bubbled up with ? so that its easy to create new functions and have
+them return errors.I also made an enum for my errors and did some traits so they can be digestable
+Theyre not really colorful but I put alot of effort into it maybe it counts :p
+
+>also made a small pull request for abstracting the color array
+
+Please write a paragraph or two (max. 250 words) describing how your design was
+influenced by this challenge, with specific reference to sections of your code.
+If you completed the "Pull Request" design excellence, please just leave a link
+to your PR.
+
+> it was challenging since i had to design around having everything be easily located
+> i couldnt just match results and just send back a generic error
+> had to make sure i wrote error messages that were actually decent
+> because i also did enums on the errors, i could match on specific errors when i needed
+> this let me have more control over the final error displayed if multiple have gone wrong
+> I ended up using a results merger as well with generics so I could see if a vector of errors were
+> Ok or Err, although I'm not good enough to return the value of the Ok or error, it still shows the 
+> type of the result that has a result 
+
+## Design Limitations
+
+If you made any design decisions which you now regret making; but don't to go back and change them,
+let us know here. You can make up your design marks by acknowledging up to 5 things you would do
+differently now.
+
+> I hate that i didn't make my error parsing more modular, in several functions I combined checking 
+such as valid bool , valid query, etc. I ended up having to write alot more functions just because 
+i didnt have one that suited me correctly. 
+
+I also regret not parsing the string in with " for raw strings, it then made me have to slice it 
+during translation which really sucks and adds code bloat
+
+I know my recursion for the while and if loops can be done alot better as theres about 80% similarity
+between if_subprocess, while_subprocess, and translate. if given more time i would like to fix this
+
+my matching patterns arent the best particularly in check_equality, where i think i couldve made it cleaner
+theres also a few other places where i just use a fat match statement which im not sure is correctly
+
+not using AST is my biggest regret, i have hardcoded the proper amount of parameters into nearly everything
+and changing it now would require a really large rewrite which is just impossible given time constraints.
+Even if i didnt do AST, manual parsing is doable but would also require a rewrite which also sucks. 
+I really should read the entire spec and plan it alot better before just diving in headfirst and praying it works.
+
+
+## Other Comments
+
+If you want to let us know something else about your program, put it here!
+(Feel free to leave this blank)
+
+> TODO i hate myself 
